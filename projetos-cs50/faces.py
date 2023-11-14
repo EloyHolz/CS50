@@ -1,21 +1,18 @@
+EMOJI_DICT = {
+    ":)": "🙂",
+    ":(": "🙁",
+    "Crying": "😭",
+    "laughing": "😂"
+}
+
+
 def emoji_conv():
-    print("Welcome to the Convertron 3000 -your favorate text to emoji convertor")
-    mood = input("Write your mood today: ").split(" ")
-    
-    
-    dict = {
-        "happy":"🙂",
-        "sad": "🙁",
-        "feliz": "🙂",
-        "triste":"🙁",
-        ":)":"🙂",
-        ":(":"🙁",
-        "Crying":"😭",
-        "laughing":"😂"
-    }  
+    print("Welcome to the Convertron 3000 - your favorite 'text to emoji' converter")
+    mood = input("Write your mood today: ").lower().split(" ")
+      
+    emoji_result = [EMOJI_DICT.get(word, word) for word in mood]
+    result_string = ' '.join(emoji_result)
 
-
-
-    print(dict.get(mood))     
+    print("Your mood in emoji: ", result_string)
 
 emoji_conv()
