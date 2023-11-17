@@ -3,9 +3,10 @@ def calc_emc():
     print("Discover how much energy you can generate with:")
 
     c = 300000000  
-    m = float(input("m: "))  
+    m = int(input("m: "))  
     E = m * (c ** 2)
 
-    print("E =", E, "J")
+    print("E =", E)
 
 calc_emc()
+
