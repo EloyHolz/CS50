@@ -6,7 +6,7 @@ def calc_emc():
     m = int(input("m: "))  
     E = m * (c ** 2)
 
-    print("E =", E)
+    print("E =", E11)
 
 calc_emc()
 
