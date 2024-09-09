@@ -6,7 +6,7 @@ EMOJI_DICT = {
 
 def emoji_conv():
     print("Welcome to the Convertron 3000 - your favorite 'text to emoji' converter")
-    mood = input("Write your mood today: ").lower().split(" ")
+    mood = input("Write your mood today: ").split(" ")
       
     emoji_result = [EMOJI_DICT.get(word, word) for word in mood]
     result_string = ' '.join(emoji_result)
@@ -14,3 +14,4 @@ def emoji_conv():
     print("Your mood in emoji: ", result_string)
 
 emoji_conv()
+
